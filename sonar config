@@ -1,0 +1,11 @@
+Inside project folder create file.
+nano sonar-project.properties
+
+Paste:
+sonar.projectKey=devsecops-demo
+sonar.sources=.
+sonar.host.url=http://localhost:9000
+sonar.login=admin
+
+Run scan:
+sonar-scanner
