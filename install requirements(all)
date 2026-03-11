@@ -1,0 +1,55 @@
+sudo apt update
+sudo apt upgrade -y
+
+Install Git: sudo apt install git -y
+Check installation: git --version   
+
+Install Docker...
+sudo apt install docker.io -y
+
+Start docker......
+sudo systemctl start docker
+sudo systemctl enable docker
+
+Create Project Folder.....
+mkdir devsecops-project
+cd devsecops-project
+Create Python Web App
+Create file: nano app.py
+
+Install Flask......
+pip install flask
+
+Run application.....
+python3 app.py
+ 
+Open browser....
+http://localhost:5000
+
+You should see
+DevSecOps Security Test App
+
+Install TruffleHog.....
+pip install trufflehog
+Run scan
+trufflehog git file://.
+
+Create Hook..
+nano .git/hooks/pre-commit
+
+Run SonarQube container.....
+docker run -d --name sonarqube \
+-p 9000:9000 sonarqube
+
+Download scanner....
+wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner.zip
+
+nstall OWASP ZAP (DAST).....
+Install
+sudo snap install zaproxy --classic
+
+Install DefectDojo.......
+git clone https://github.com/DefectDojo/django-DefectDojo.git
+cd django-DefectDojo
+docker-compose up
+
