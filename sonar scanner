@@ -1,0 +1,11 @@
+Download scanner:
+wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner.zip
+
+Unzip:
+unzip sonar-scanner.zip
+
+Move folder:
+sudo mv sonar-scanner-*/ /opt/sonar-scanner
+
+Add path:
+export PATH=$PATH:/opt/sonar-scanner/bin
