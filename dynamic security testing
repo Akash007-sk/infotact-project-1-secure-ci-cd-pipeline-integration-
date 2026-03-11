@@ -1,0 +1,12 @@
+Scan Web Application
+Target URL
+http://localhost:5000
+
+Steps
+1 Start Spider
+2 Run Active Scan
+
+The tool will detect
+SQL injection
+XSS
+authentication issues
