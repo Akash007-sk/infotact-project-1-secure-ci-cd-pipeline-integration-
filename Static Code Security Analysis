@@ -1,0 +1,12 @@
+Run SonarQube container:
+docker run -d --name sonarqube \
+-p 9000:9000 sonarqube
+
+Open browser:
+http://localhost:9000
+
+Login:
+username: admin
+password: admin
+
+Change password.
