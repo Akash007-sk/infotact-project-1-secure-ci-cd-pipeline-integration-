@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Running secret scan..."
+
+trufflehog git file://. --fail
+Save.
+
+Make executable.
+
+chmod +x .git/hooks/pre-commit
